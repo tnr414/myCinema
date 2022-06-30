@@ -39,7 +39,7 @@ app.use(express.static("frontend/build"));
 //     res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
 // });
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5000; 
 console.log(port);
 app.listen(port, () => console.log('listing to port ', port));
 module.exports = app;
